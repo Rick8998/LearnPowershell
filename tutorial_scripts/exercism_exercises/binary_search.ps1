@@ -25,7 +25,6 @@ Function binary_search($sorted_list, $searched_element){
     $first_half = $sorted_list[0..($list_half_index-1)]
     $second_half = $sorted_list[($list_half_index+1)..$sorted_list.Length]
 
-
     if($sorted_list[$list_half_index] -eq $searched_element){
         return 1
     } elseif(($sorted_list.Length -eq 1) -and (($sorted_list[$list_half_index] -gt $searched_element) -or ($sorted_list[$list_half_index] -lt $searched_element))) {
