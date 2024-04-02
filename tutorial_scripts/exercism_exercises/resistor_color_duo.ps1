@@ -56,7 +56,7 @@ Function band_colors(){
 }
 
 $color_names = band_colors
-Write-Host "`n########### COLOR NAMES & CODES ###########"
+Write-Host "`n########### COLORS NAME & CODE ###########"
 foreach($color in $color_names){
     $color_code = get_color_code($color)
     Write-Host $color "->" $color_code
